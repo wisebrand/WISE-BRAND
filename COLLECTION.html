@@ -9,18 +9,19 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #beb4b49a;
+    
             
         }
         header {
-            background-color: #51c4fa4f;
+            background-color: #0000006b;
             padding: 10px 20px;
         }
         .logo {
             font-size: 50px;
             font-weight: bold;
             text-decoration: double;
-            color: black;          
+            color:rgb(0, 0, 0);          
         }
         .search-bar {
             display: flex;
@@ -28,33 +29,31 @@
         }
         .search-bar input {
             flex-grow: 1;
-            color: rgb(8, 12, 12);
             padding: 5px;
             margin: 2px;
-            font-size: 16px;
-            background-color: #7f16bb7c;
+            font-size: 26px;
+            background-color: #0a0a0ac2;
             border: none;
-            border-radius: 15px 0 0 15px;
+            border-radius: 15px  15px;
         }
         .search-bar button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #c243f58a;
-            color: rgb(230, 221, 229);
-            border: none;
-            border-radius: 0 4px 4px 0;
-            cursor: pointer;
+            background-color: #000000fd;
+            color: wheat;
         }
-        nav {
-            background-image: 12.jpg;
-            color: #020208;
-            background-color: #cd99e58f;
-            padding: 10px 20px;
+        ::placeholder {
+            color: wheat;
         }
-        nav a {
-            color: rgb(8, 252, 49);
-            text-decoration: none;
-            margin-right: 15px;
+        .navbar {
+            background-color: #00000063;
+            padding: 2px;
+        }
+        .navbar button{
+           font-weight: bolder;
+           padding: 6px;
+           font-size: 16px;
+           margin-right: 30px;
+           color: wheat;
+           background-color: #000000;
         }
         main {
             padding: 20px;
@@ -156,12 +155,13 @@ footer {
         </div>
     </header>
     <nav>
+        <div class="navbar">
         <a href="HOME.html"><button class="clickable">Home</button></a>
         <a href="CATEGORY.html"><button class="clickable">Categories</button></a>
         <a href="COLLECTION.html"><button class="clickable">Collections</button></a>
         <a href="ACCOUNT.html"><button class="clickable">Account</button></a>
+    </div>
     </nav>
-
     <main>
         <h2>Top Deals</h2>
         <div class="product-grid">

@@ -9,18 +9,19 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #beb4b49a;
+    
             
         }
         header {
-            background-color: #51c4fa4f;
+            background-color: #0000006b;
             padding: 10px 20px;
         }
         .logo {
             font-size: 50px;
             font-weight: bold;
             text-decoration: double;
-            color: rgba(105, 12, 105, 0.856);          
+            color:rgb(0, 0, 0);          
         }
         .search-bar {
             display: flex;
@@ -28,33 +29,31 @@
         }
         .search-bar input {
             flex-grow: 1;
-            color: rgb(8, 12, 12);
             padding: 5px;
             margin: 2px;
-            font-size: 16px;
-            background-color: #7f16bb7c;
+            font-size: 26px;
+            background-color: #0a0a0ac2;
             border: none;
-            border-radius: 15px 0 0 15px;
+            border-radius: 15px  15px;
         }
         .search-bar button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #c243f58a;
-            color: rgb(230, 221, 229);
-            border: none;
-            border-radius: 0 4px 4px 0;
-            cursor: pointer;
+            background-color: #000000fd;
+            color: wheat;
         }
-        nav {
-            background-image: 12.jpg;
-            color: #020208;
-            background-color: #cd99e58f;
-            padding: 10px 20px;
+        ::placeholder {
+            color: wheat;
         }
-        nav a {
-            color: rgb(8, 252, 49);
-            text-decoration: none;
-            margin-right: 15px;
+        .navbar {
+            background-color: #00000063;
+            padding: 2px;
+        }
+        .navbar button{
+           font-weight: bolder;
+           padding: 6px;
+           font-size: 16px;
+           margin-right: 30px;
+           color: wheat;
+           background-color: #000000;
         }
         main {
             padding: 20px;
@@ -62,48 +61,48 @@
         }
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+            column-gap: 1pt;
+            padding: 5px;
         }
         .product-card {
-            background-color: rgba(223, 65, 138, 0.61);
-            border-radius: 20px;
-            padding: 13px;
+            background-color: rgba(223, 216, 219, 0.267);
+            border-radius: 30px;
+            padding: 10px;
+            margin: 5px;
             box-shadow: 0 2px 4px rgba(15, 20, 20, 0.692);
-            height: 190px;
-            width: 90%;
+            height: 20s0px;
+            width: 160px;
         }
         .product-card img {
-            width: 100%;
-            height: 60%;
-            object-fit: cover;
-            border-radius: 3px;
-        
+            width: 140px;
+            height: 120px;
+            object-fit: scale-down;
+            border-radius: 7px;
+            padding: 10px;
         }
         .product-card h3 {
-            margin: 5px 0;
-            font-size: 15px;
-            text-decoration-thickness: 500px;
-        
+            margin: 2px;
+            font-size: 17px;
         }
         .product-card p {
-            color: #020208;
+            color: #ffffffbd;
             font-weight: bold;
             margin: 0px 0;
-            size: 10px;
+             font-size: 15px;
         }
         .product-card button {
-            background-color: #ff005585;
-            color: white;
+            background-color: #9e6c7c85;
+            color: rgb(252, 105, 7);
             border: none;
-            padding: 8px 12px;
+            padding: 3px;
+            margin: 5px;
             border-radius: 4px;
             cursor: pointer;
-            width: 100%
-            
+            width: 150px
         }
         .clickable {
-        background-color: rgba(240, 8, 151, 0.452);
+        background-color: rgba(146, 125, 138, 0.452);
         padding: 10px;
         border: none;
         border-radius: 5px;
@@ -145,7 +144,7 @@ footer {
     </style>
 </head>
 <body>
-    <body style="background-image:url(sea.jpg);">
+    <body style="background-image:url(rolx.jpg);">
 
     </body>
     <header>
@@ -156,111 +155,15 @@ footer {
         </div>
     </header>
     <nav>
+        <div class="navbar">
         <a href="HOME.html"><button class="clickable">Home</button></a>
         <a href="CATEGORY.html"><button class="clickable">Categories</button></a>
         <a href="COLLECTION.html"><button class="clickable">Collections</button></a>
         <a href="ACCOUNT.html"><button class="clickable">Account</button></a>
     </nav>
+    </div>
     <main>
-        <h2>Top Deals</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="rolx.jpg" alt="Product 1">
-                <h3>Rolex Watch</h3>
-                <p>$299.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="neck r.jpg" alt="Product 2">
-                <h3>Love Necklace</h3>
-                <p>$899.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="queen ne.jpg" alt="Product 3">
-                <h3>Queen Ladys Necklace</h3>
-                <p>$79.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="wat p.jpg" alt="Product 4">
-                <h3>Pink Watch With Bracelet</h3>
-                <p>$149.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <section class="hero">
-                <h1>Shop Our Latest Products</h1>
-                <button class="clickable">Explore Now</button>
-            </section>
-            <div class="product-card">
-                <img src="moon ne.jpg" alt="Product 5">
-                <h3>Couple Moon Necklace</h3>
-                <p>$599.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="plus.jpg" alt="Product 6">
-                <h3>Male Cross Necklace</h3>
-                <p>$399.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <section class="hero">
-                <h1>Shop Our Latest Products</h1>
-                <button class="clickable">Explore Now</button>
-            </section>
-            <div class="product-card">
-                <img src="lady sp.jpg" alt="Product 4">
-                <h3>Ladys Sippers</h3>
-                <p>$149.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="lov br.jpg" alt="Product 4">
-                <h3>Couple Bracelet</h3>
-                <p>$149.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="m bag.jpg" alt="Product 4">
-                <h3>M bag</h3>
-                <p>$149.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="sp d.jpg" alt="Product 4">
-                <h3>Ladys Sippers</h3>
-                <p>$149.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="t shit.jpg" alt="Product 4">
-                <h3>Men T-Shirt</h3>
-                <p>$149.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="pl bag.jpg" alt="Product 4">
-                <h3>Bag</h3>
-                <p>$149.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="bff neck.jpg" alt="Product 4">
-                <h3>Best Friend Necklace</h3>
-                <p>$149.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="buterfly neck.jpg" alt="Product 4">
-                <h3>Butterfly Necklace</h3>
-                <p>$149.99</p>
-                <button button class="clickable">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="Wat for him.jpg" alt="Product 4">
-                <h3>Men Watch With Bracelet</h3>
-                <p>$149.99</p>
-                <button button class="clickable">Add to Cart</button>
+        
             </div>
         </div>
         <section class="cta">
